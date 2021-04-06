@@ -1,0 +1,123 @@
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+    *{margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+
+    #mainSection {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      background-color: #fff;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: center;
+      align-items: center;
+    }
+    .svg1 {
+      position: absolute;
+      left: -5px;
+      top: 30%;
+    }
+    .svg2 {
+      position: absolute;
+      left: 700px;
+      top: -70px;
+    }
+    .svg3 {
+      position: absolute;
+      right: -76px;
+      top: 35%;
+    }
+    .svg4 {
+      position: absolute;
+      bottom: -130px;
+      left: 500px;
+    }
+    .mainBox {
+      width: 1140px;
+      height: 500px;
+      padding: 100px;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7f7f7;
+      transition: all 0.6s ease;
+    }
+    .mainBox:hover {
+      box-shadow: 0px 0px 39px 25px #ccc;
+      background-color: #fff;
+      opacity: 0.88;
+    }
+    
+    .bird {
+      height: 350px;
+      flex: 1 1 300px;
+      position: relative;
+    }
+    .birdsOne {background-color: #E28525; border-radius: 5px 0 0 5px;}
+    .birdsTwo {background-color: #016972;}
+    .birdsThree {background-color: #00403F; border-radius: 0 5px 5px 0;}
+    img {
+      width: 50px;
+      height: 30px;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    img:hover {
+      transform: translateY(-5px);
+    }
+    .title {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      font-size: 22px;
+      color: hsl(0, 0%, 95%);
+    }
+    .title:hover {color: #fff;}
+    .describtion {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    .describtion:hover {color: #fff;}
+    .content {
+      position: absolute;
+      left: 18px;
+      top: 70px;
+      padding: 18px;
+    }
+    button {
+      border: 1.5px solid hsl(0, 0%, 95%);
+      padding: 10px 15px;
+      border-radius: 40px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .btn1 {background-color: #E28525;  color: hsl(0, 0%, 95%); transition: all 0.4s ease;}
+    .btn1:hover {
+      background-color: hsl(0, 0%, 95%);
+      color: #E28525;
+    }
+    .btn2 {background-color: #016972; color: hsl(0, 0%, 95%); transition: all 0.4s ease;}
+    .btn2:hover {
+      background-color: hsl(0, 0%, 95%);
+      color: #016972;
+    }
+    .btn3 {background-color: #00403F; color: hsl(0, 0%, 95%); transition: all 0.4s ease;}
+    .btn3:hover {
+      background-color: hsl(0, 0%, 95%);
+      color: #00403F;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 375px) {
+    .mainBox{width: 100%; height: 1000px;}
+    .birdsOne{border-radius: none;}
+    .birdsThree{border-radius: none;}
+    }
